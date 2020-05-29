@@ -1,0 +1,23 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "adminUsername": {
+            "value": "u1"
+        },
+        "adminPasswordOrKey": {
+            "reference": {
+                "keyVault": {
+                "id": "/subscriptions/39871908-78ed-4ef9-adbf-cb5c701334e3/resourceGroups/RG2/providers/Microsoft.KeyVault/vaults/kvault3"
+                },
+                "secretName": "rg2secretLin"
+            }
+          },
+        "adminPublicKey": {
+            "value": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDDRXBJ64FWiAR2sjbr2UqCq8UGllrZuHtauoLr+1mLhoq9WfA+qOGhqyFue2yDoOikXKma8I2WQWsVhB/2Uz9WN+JgZhqf8IYVHQfNDSo/UiuCLu8YHqk6EmoTcX1X3yJvupcPXW2slAZsAYWKZZrIleh4VdUqbp9oFJ5RgdJIJDzPLOYEzrSs96aKfE8YWqNyaKl04uXfF6DIzrZ00SmfRlJDzGF8eCvnRwfoxFUgBNeot9CJU3UStSoljmJ3sU1gr8UXUn7LsmNDW+f0YUkdAS3HHP3/appoF+3OkpvWUUMbtUSFwRte0WJmdXrzMFKCIOgUbxOQBcctT9QR34PR daniel@cc-c62399b3-6dd56569df-9xqnk"
+          },
+        "dnsLabelPrefix": {
+            "value": "Lin"
+        }
+    }
+}
