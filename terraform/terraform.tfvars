@@ -1,0 +1,7 @@
+mi_server_location         = "westus2"
+mi_server_rg               = "mi-rg"
+mi_server_address_space    = "10.0.0.0/16"
+mi_server_name             = "miserver01"
+mi_server_subnet           = "10.0.1.0/24"
+mi_server_address_prefix   = "10.0.1.0/24"
+terraform_script_version   = "1.0.0"
